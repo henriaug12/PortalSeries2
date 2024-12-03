@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css" />
+    <title>Explorador</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mt-2">
+      <div class="container-fluid">
+        <a class="navbar-brand ml-4" href="index.html"
+          ><img id="logo" src="../assets/img/logo.png"
+        /></a>
+        <form class="d-flex mt-3" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Pesquisar"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success ml-3" type="submit">
+            Pesquisar
+          </button>
+        </form>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row text-center">
+        <div class="col-lg-3 m-2">
+          <h2>Filtros de pesquisa</h2>
+          <input type="checkbox" class="escondido" id="filtroComedia" />
+          <label class="filtro" for="filtroComedia">Comédia</label>
+
+          <input type="checkbox" class="escondido" id="filtroTerror" />
+          <label class="filtro" for="filtroTerror">Terror</label>
+
+          <input type="checkbox" class="escondido" id="filtroSuspense" />
+          <label class="filtro" for="filtroSuspense">Suspense</label>
+
+          <input type="checkbox" class="escondido" id="filtroAcao" />
+          <label class="filtro" for="filtroAcao">Ação</label>
+        </div>
+        <div class="col-lg-8 mt-5 ml-lg-5">
+          <div class="container-fluid">
+            <div class="row justify-content-start">
+              <div class="card m-2">
+                <a href="serie.html">
+                  <img
+                    src="../assets/img/ricknmorty.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h4 class="card-text">Rick & Morty: Temporada 7</h4>
+                  </div>
+                </a>
+              </div>
+              <div class="card m-2">
+                <a href="">
+                  <img
+                    src="../assets/img/apenasumshow.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h4 class="card-text">Apenas um Show</h4>
+                  </div>
+                </a>
+              </div>
+              <div class="card m-2">
+                <a href="">
+                  <img
+                    src="../assets/img/gumball.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h4 class="card-text">O Incrível Mundo de Gumball</h4>
+                  </div>
+                </a>
+              </div>
+              <div class="card m-2">
+                <a href="">
+                  <img
+                    src="../assets/img/samuraijack.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h4 class="card-text">Samurai Jack</h4>
+                  </div>
+                </a>
+              </div>
+              <div class="card m-2">
+                <a href="">
+                  <img
+                    src="../assets/img/mansaofoster.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h4 class="card-text">
+                      Mansão Foster para Amigos Imaginários
+                    </h4>
+                  </div>
+                </a>
+              </div>
+              <div class="card m-2">
+                <a href="">
+                  <img
+                    src="../assets/img/muchalucha.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h4 class="card-text">Mucha Lucha</h4>
+                  </div>
+                </a>
+              </div>
+              <div class="card m-2">
+                <a href="">
+                  <img
+                    src="../assets/img/amigoescola.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h4 class="card-text">Meu Amigo da Escola é um Macaco</h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

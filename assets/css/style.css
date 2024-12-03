@@ -1,0 +1,148 @@
+body {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.contorno {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.card {
+  width: 24rem;
+  background-color: #1f1f1f;
+  border: solid grey 2px;
+}
+
+.card > img {
+  max-height: 14rem;
+  object-fit: contain;
+}
+
+.card > a {
+  text-decoration: none;
+  color: white;
+}
+
+.card:hover {
+  border: solid white 2px;
+}
+
+.icone {
+  width: 2rem;
+}
+
+.icone2 {
+  width: 6rem;
+  border-radius: 15px;
+}
+
+.escondido {
+  display: none;
+}
+
+#adicionarLista:hover + label,
+#filtroComedia:hover + label,
+#filtroTerror:hover + label,
+#filtroSuspense:hover + label,
+#filtroAcao:hover + label {
+  cursor: pointer;
+}
+
+#adicionarLista:checked + label,
+#filtroComedia:checked + label,
+#filtroTerror:checked + label,
+#filtroSuspense:checked + label,
+#filtroAcao:checked + label {
+  transition-duration: 200ms;
+  background-color: rgb(42, 42, 123);
+  cursor: pointer;
+}
+
+.filtro {
+  display: block;
+  background: grey;
+  padding: 1rem;
+  border: solid black 2px;
+  border-radius: 100px;
+}
+
+.btnAdicionar {
+  display: block;
+  background: grey;
+  padding: 0.75rem;
+  border: solid black 2px;
+  border-radius: 100px;
+}
+.fundo {
+  position: relative;
+  text-align: center;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+.minifoto {
+  width: 10rem;
+  border-radius: 1000px;
+}
+
+#logo {
+  width: 100px;
+}
+
+#foto {
+  width: 8rem;
+  border-radius: 999px;
+}
+
+#linkExplorador {
+  color: white;
+  padding: 1rem;
+  padding-top: 1.2rem;
+  margin-right: 3rem;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+#linkExplorador:hover {
+  transition-duration: 150ms;
+  background-color: grey;
+}
+
+#cover {
+  background-image: url("../img/cover.jpg");
+  opacity: 0.2;
+}
+
+@media (max-width: 965px) {
+  .fundo,
+  .centered,
+  .bottom-right {
+    position: static;
+    transform: none;
+  }
+
+  .icone2 {
+    margin-left: 5%;
+    bottom: 5%;
+    right: 5%;
+  }
+
+  #cover {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+}
