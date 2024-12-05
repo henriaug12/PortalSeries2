@@ -1,0 +1,21 @@
+{ 
+    "usuario": [
+        {
+            "id": 1,
+            "nome": "Henrique Augusto Freire de Oliveira",
+            "curso": "Sistemas de Informação",
+            "email": "henriaug12@gmail.com",
+            "facebook": "facebook.com",
+            "twitter": "twitter.com",
+            "instagram": "instagram.com",
+            "biografia": "Consigo me comunicar bem, gosto de ajudar e ser proativo. Também tenho muita facilidade com a língua inglesa, tendo a praticado quase diariamente há mais de 15 anos. Tenho facilidade em aprender sozinho e sou muito rigoroso com achar e compartilhar fontes de informação ricas e de credibilidade."
+        }
+    ],
+    "series": [
+        {
+            "idConteudo": 1,
+            "idTDMB": null,
+            "idUsuario": 1
+        }
+    ]
+}
