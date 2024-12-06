@@ -9,14 +9,14 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link href="../assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css" />
     <title>Home</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary mt-2">
       <div class="container-fluid">
         <a class="navbar-brand ml-4" href="index.html"
-          ><img id="logo" src="../assets/img/logo.png"
+          ><img id="logo" src="./assets/img/logo.png"
         /></a>
         <a id="linkExplorador" href="explorador.html">
           <h3>Explorador</h3>
@@ -73,25 +73,14 @@
     <hr class="bg-dark ml-lg-5 mr-5" />
     <div class="container-fluid">
       <div id="divNovasSeries" class="row text-center ml-lg-5 justify-content-start">
-        <div class="card m-2">
-          <a href="serie.html">
-            <img
-              src="../assets/img/ricknmorty.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h4 class="card-text">Rick & Morty: Temporada 7</h4>
-            </div>
-          </a>
-        </div>
+        
       </div>
     </div>
     <h1 class="mt-4 pl-5">Informações do Aluno</h1>
     <hr class="bg-dark ml-lg-5 mr-5" />
     <div id="infoUsuario" class="container-fluid justify-content-evenly">
       <h2>Se você está vendo isso, não se esqueça de rodar o servidor!<br>
-      "npx json-server ./assets/json/db.json"</h2>
+      "npx json-server ./db/db.json"</h2>
     </div>
     <h1 class="mt-4 pl-5">Minhas Séries</h1>
     <hr class="bg-dark ml-lg-5 mr-5" />
@@ -105,6 +94,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="../assets/js/index.js"></script>
+    <script src="./assets/scripts/home.js"></script>
   </body>
 </html>

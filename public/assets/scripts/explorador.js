@@ -36,7 +36,7 @@ async function pesquisarSeries(){
     for(let i = 0; i < series.length; i++) {
       conteudo += `
           <div class="card m-2">
-              <a href="serie.html"><img
+              <a href="detalhes.html"><img
                   src="https://image.tmdb.org/t/p/original/${series[i].poster_path}"
                   class="card-img-top"
                   alt="..."

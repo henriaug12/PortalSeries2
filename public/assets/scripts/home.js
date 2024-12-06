@@ -18,7 +18,7 @@ window.addEventListener("load", async () => {
     if(i == 0) conteudo += `active `;
        
     conteudo +=`img-fluid">`
-    if(i == 0) conteudo += `<a href="serie.html">`;
+    if(i == 0) conteudo += `<a href="detalhes.html">`;
     conteudo +=
           `<img
             src="https://image.tmdb.org/t/p/original/${seriesPopulares[i].backdrop_path}"
@@ -49,7 +49,7 @@ window.addEventListener("load", async () => {
     conteudo += `
     <div class="card m-2">
     <a href="`;
-    if(i == 0) conteudo += `serie.html`;
+    if(i == 0) conteudo += `detalhes.html`;
     conteudo += 
         `">
         <img
@@ -80,7 +80,7 @@ window.addEventListener("load", async () => {
       <div class="col-3">
         <h2 class="mb-4">Autoria</h2>
         <div class="row">
-          <img id="foto" class="ml-2" src="../assets/img/Foto.jpg" />
+          <img id="foto" class="ml-2" src="./assets/img/Foto.jpg" />
           <div id="autordesc" class="ml-4">
             <p>Nome: ${usuario.nome}</p>
             <p>Curso: ${usuario.curso}</p>
@@ -89,14 +89,14 @@ window.addEventListener("load", async () => {
         </div>
         <h2 class="mt-4">
           Redes sociais:
-          <a href="${usuario.facebook}"
-            ><img class="icone m-1" src="../assets/img/fbicon.png"
+          <a target="_blank" href="${usuario.facebook}"
+            ><img class="icone m-1" src="./assets/img/fbicon.png"
           /></a>
-          <a href="${usuario.twitter}"
-            ><img class="icone m-1" src="../assets/img/tticon.png"
+          <a target="_blank" href="${usuario.twitter}"
+            ><img class="icone m-1" src="./assets/img/tticon.png"
           /></a>
-          <a href="${usuario.instagram}"
-            ><img class="icone m-1" src="../assets/img/igicon.png"
+          <a target="_blank" href="${usuario.instagram}"
+            ><img class="icone m-1" src="./assets/img/igicon.png"
           /></a>
         </h2>
       </div>

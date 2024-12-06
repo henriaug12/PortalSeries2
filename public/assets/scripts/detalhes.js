@@ -27,9 +27,9 @@ window.addEventListener("load", async () => {
           </h2>
         </div>
         <div class="bottom-right">
-          <a href="https://www.disneyplus.com/pt-br/series/bleach/6g48QKlgQdWK"
+          <a target="_blank" href="https://www.disneyplus.com/pt-br/series/bleach/6g48QKlgQdWK"
           >
-            <img class="icone2 m-1" src="../assets/img/disney.png" />
+            <img class="icone2 m-1" src="./assets/img/disney.png" />
           </a>
         </div>
       </div>
@@ -41,12 +41,15 @@ window.addEventListener("load", async () => {
     }  
     conteudo += `
         />
-            <label class="btnAdicionar" for="adicionarLista">
-            Adicionar às Minhas Séries
-            </label>
+            <label class="btnAdicionar" for="adicionarLista">`;
+    if(seriesJson.length > 0){
+        conteudo +=`Adicionado`;
+    }
+    else conteudo += `Adicionar às Minhas Séries`;
+    conteudo +=`</label>
         </div>
       </div>
-      `
+      `;
     divResumo.innerHTML = conteudo;
     conteudo = "";
     const respostaElenco = await fetch("https://api.themoviedb.org/3/tv/30984/credits?language=pt-BR&api_key=70f3df703672949b986e1d39817c515c")
