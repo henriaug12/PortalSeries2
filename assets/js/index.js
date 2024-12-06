@@ -127,4 +127,4 @@ window.addEventListener("load", async () => {
     }
 
     divFavoritas.innerHTML += conteudo;
-})
+});

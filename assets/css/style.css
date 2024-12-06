@@ -121,7 +121,7 @@ body {
 }
 
 #cover {
-  background-image: url("../img/cover.jpg");
+  max-width: 100%;
   opacity: 0.2;
 }
 

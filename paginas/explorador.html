@@ -20,12 +20,13 @@
         /></a>
         <form class="d-flex mt-3" role="search">
           <input
+            id="inputPesquisa"
             class="form-control me-2"
             type="search"
             placeholder="Pesquisar"
             aria-label="Search"
           />
-          <button class="btn btn-outline-success ml-3" type="submit">
+          <button id="btnPesquisar" class="btn btn-outline-success ml-3" type="submit">
             Pesquisar
           </button>
         </form>
@@ -35,93 +36,8 @@
       <div class="row text-center">
         <div class="col-lg-12 mt-5 ml-lg-5">
           <div class="container-fluid">
-            <div class="row justify-content-start">
-              <div class="card m-2">
-                <a href="serie.html">
-                  <img
-                    src="../assets/img/ricknmorty.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h4 class="card-text">Rick & Morty: Temporada 7</h4>
-                  </div>
-                </a>
-              </div>
-              <div class="card m-2">
-                <a href="">
-                  <img
-                    src="../assets/img/apenasumshow.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h4 class="card-text">Apenas um Show</h4>
-                  </div>
-                </a>
-              </div>
-              <div class="card m-2">
-                <a href="">
-                  <img
-                    src="../assets/img/gumball.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h4 class="card-text">O Incrível Mundo de Gumball</h4>
-                  </div>
-                </a>
-              </div>
-              <div class="card m-2">
-                <a href="">
-                  <img
-                    src="../assets/img/samuraijack.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h4 class="card-text">Samurai Jack</h4>
-                  </div>
-                </a>
-              </div>
-              <div class="card m-2">
-                <a href="">
-                  <img
-                    src="../assets/img/mansaofoster.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h4 class="card-text">
-                      Mansão Foster para Amigos Imaginários
-                    </h4>
-                  </div>
-                </a>
-              </div>
-              <div class="card m-2">
-                <a href="">
-                  <img
-                    src="../assets/img/muchalucha.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h4 class="card-text">Mucha Lucha</h4>
-                  </div>
-                </a>
-              </div>
-              <div class="card m-2">
-                <a href="">
-                  <img
-                    src="../assets/img/amigoescola.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h4 class="card-text">Meu Amigo da Escola é um Macaco</h4>
-                  </div>
-                </a>
-              </div>
+            <div id="divSeries" class="row justify-content-start">
+              
             </div>
           </div>
         </div>
@@ -133,5 +49,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src ="../assets/js/explorador.js"></script>
   </body>
 </html>

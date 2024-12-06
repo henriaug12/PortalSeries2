@@ -1,60 +1,51 @@
-{ 
-    "usuario": [
-        {
-            "id": 1,
-            "nome": "Henrique Augusto Freire de Oliveira",
-            "curso": "Sistemas de Informação",
-            "email": "henriaug12@gmail.com",
-            "facebook": "https://facebook.com",
-            "twitter": "https://twitter.com",
-            "instagram": "https://instagram.com",
-            "biografia": "Consigo me comunicar bem, gosto de ajudar e ser proativo. Também tenho muita facilidade com a língua inglesa, tendo a praticado quase diariamente há mais de 15 anos. Tenho facilidade em aprender sozinho e sou muito rigoroso com achar e compartilhar fontes de informação ricas e de credibilidade."
-        }
-    ],
-    "seriesFavoritas": [
-        {
-            "idConteudo": 1,
-            "idTMDB": 30984,
-            "idUsuario": 1
-        },
-        {
-            "idConteudo": 2,
-            "idTMDB": 45790,
-            "idUsuario": 1
-        },
-        {
-            "idConteudo":3,
-            "idTMDB": 114410,
-            "idUsuario": 1
-        }
-        ,
-        {
-            "idConteudo":4,
-            "idTMDB": 85937,
-            "idUsuario": 1
-        },
-        {
-            "idConteudo":5,
-            "idTMDB": 13916,
-            "idUsuario": 1
-        }
-        ,
-        {
-            "idConteudo":6,
-            "idTMDB": 1429,
-            "idUsuario": 1
-        }
-        ,
-        {
-            "idConteudo":7,
-            "idTMDB": 46298,
-            "idUsuario": 1
-        }
-        ,
-        {
-            "idConteudo":8,
-            "idTMDB": 95479,
-            "idUsuario": 1
-        }
-    ]
+{
+  "usuario": [
+    {
+      "id": "1",
+      "nome": "Henrique Augusto Freire de Oliveira",
+      "curso": "Sistemas de Informação",
+      "email": "henriaug12@gmail.com",
+      "facebook": "https://facebook.com",
+      "twitter": "https://twitter.com",
+      "instagram": "https://instagram.com",
+      "biografia": "Consigo me comunicar bem, gosto de ajudar e ser proativo. Também tenho muita facilidade com a língua inglesa, tendo a praticado quase diariamente há mais de 15 anos. Tenho facilidade em aprender sozinho e sou muito rigoroso com achar e compartilhar fontes de informação ricas e de credibilidade."
+    }
+  ],
+  "seriesFavoritas": [
+    {
+      "idTMDB": 45790,
+      "idUsuario": 1,
+      "id": "d87b"
+    },
+    {
+      "idTMDB": 114410,
+      "idUsuario": 1,
+      "id": "898c"
+    },
+    {
+      "idTMDB": 85937,
+      "idUsuario": 1,
+      "id": "1724"
+    },
+    {
+      "idTMDB": 13916,
+      "idUsuario": 1,
+      "id": "9137"
+    },
+    {
+      "idTMDB": 1429,
+      "idUsuario": 1,
+      "id": "d283"
+    },
+    {
+      "idTMDB": 46298,
+      "idUsuario": 1,
+      "id": "fd67"
+    },
+    {
+      "idTMDB": 95479,
+      "idUsuario": 1,
+      "id": "3e62"
+    }
+  ]
 }
