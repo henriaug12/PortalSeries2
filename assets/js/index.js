@@ -65,5 +65,66 @@ window.addEventListener("load", async () => {
   }
   divNovasSeries.innerHTML = conteudo;
   
-  ;
+  conteudo = "";
+  let divInfoUser = document.getElementById("infoUsuario");
+  const informacaoUsuario = await fetch("http://localhost:3000/usuario/1", options);
+  const usuario = await informacaoUsuario.json();
+  conteudo += `
+    <div class="row justify-content-evenly">
+      <div class="ml-lg-5 col-8">
+        <h2>Sobre</h2>
+        <h5 class="text-justify">
+          ${usuario.biografia}
+        </h5>
+      </div>
+      <div class="col-3">
+        <h2 class="mb-4">Autoria</h2>
+        <div class="row">
+          <img id="foto" class="ml-2" src="../assets/img/Foto.jpg" />
+          <div id="autordesc" class="ml-4">
+            <p>Nome: ${usuario.nome}</p>
+            <p>Curso: ${usuario.curso}</p>
+            <p>Email: ${usuario.email} </p>
+          </div>
+        </div>
+        <h2 class="mt-4">
+          Redes sociais:
+          <a href="${usuario.facebook}"
+            ><img class="icone m-1" src="../assets/img/fbicon.png"
+          /></a>
+          <a href="${usuario.twitter}"
+            ><img class="icone m-1" src="../assets/img/tticon.png"
+          /></a>
+          <a href="${usuario.instagram}"
+            ><img class="icone m-1" src="../assets/img/igicon.png"
+          /></a>
+        </h2>
+      </div>
+    </div>`;
+    divInfoUser.innerHTML = conteudo;
+    
+    conteudo = "";
+    let divFavoritas = document.getElementById("seriesFavoritas");
+    const seriesFavoritas = await fetch(`http://localhost:3000/seriesFavoritas?idUsuario=${usuario.id}`)
+    const seriesJson = await seriesFavoritas.json();
+
+    for(let i = 0; i < seriesJson.length; i++){
+      const respostaSerie = await fetch(`https://api.themoviedb.org/3/tv/${seriesJson[i].idTMDB}?language=pt-BR&api_key=70f3df703672949b986e1d39817c515c`)
+      const serie = await respostaSerie.json();
+      conteudo += `
+        <div class="card m-2">
+          <a href="">
+            <img
+              src="https://image.tmdb.org/t/p/original/${serie.poster_path}"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h4 class="card-text">${serie.name}</h4>
+            </div>
+          </a>
+        </div>`
+    }
+
+    divFavoritas.innerHTML += conteudo;
 })
